@@ -23,7 +23,6 @@ public class PlayerShooting : MonoBehaviour
     public void Shoot()
     {
         Vector3 direction = GetShootDirection();
-        // var bullet = Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
         var bullet = bulletPool.Get();
         bullet.transform.position = shootPoint.position;
         bullet.SetDirection(direction);

@@ -25,8 +25,6 @@ public class Bullet : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        // CreateTrail();
-        // StartCoroutine(DelayedKill(selfDestructTime));
     }
 
     void OnEnable()
